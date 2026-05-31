@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Application Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1> Job Application Tracker</h1>
+  <p class="subtitle">Track every application. Land the right job.</p>
+
+  <div class="stats">
+    <div class="stat-card"><div class="number" id="total">0</div><div class="label">Total</div></div>
+    <div class="stat-card"><div class="number" id="interview">0</div><div class="label">Interviews</div></div>
+    <div class="stat-card"><div class="number" id="offered">0</div><div class="label">Offered</div></div>
+    <div class="stat-card"><div class="number" id="rejected">0</div><div class="label">Rejected</div></div>
+  </div>
+
+  <div class="form-card">
+    <h2> Add New Application</h2>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Company</label>
+        <input type="text" id="company" placeholder="e.g. Google" />
+      </div>
+      <div class="form-group">
+        <label>Role</label>
+        <input type="text" id="role" placeholder="e.g. SDE Trainee" />
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Status</label>
+        <select id="status">
+          <option value="Applied">Applied</option>
+          <option value="Interview">Interview</option>
+          <option value="Offered">Offered</option>
+          <option value="Rejected">Rejected</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Notes</label>
+        <input type="text" id="notes" placeholder="e.g. Applied via Indeed" />
+      </div>
+    </div>
+    <button class="btn-add" onclick="addJob()">Add Application</button>
+  </div>
+
+  <div class="jobs-section">
+    <h2>📋 Your Applications</h2>
+    <div id="jobList"></div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
