@@ -32,13 +32,16 @@ I built this project to learn full-stack web development while solving a real pr
 | DELETE | /api/jobs/:id | Delete an application |
 
 ## Project Structure
+```
 job-tracker/
-├── public/
-│   ├── index.html     # Frontend structure
-│   ├── style.css      # Styling
-│   └── app.js         # Frontend logic (Fetch API)
-├── routes/
-│   └── jobs.js        # API routes and Mongoose schema
-├── .env               # Environment variables (not committed)
-├── server.js          # Express server entry point
-└── package.json
+├── public/              # Frontend files served by Express
+│   ├── index.html       # Main HTML page
+│   ├── style.css        # All styling
+│   └── app.js           # Frontend JS (API calls, DOM updates)
+├── routes/              # Backend API routes
+│   └── jobs.js          # CRUD endpoints + Mongoose schema
+├── .env                 # Secret config (not pushed to GitHub)
+├── .gitignore           # Ignores node_modules and .env
+├── server.js            # App entry point (Express + MongoDB setup)
+└── package.json         # Project dependencies
+```
