@@ -3,7 +3,7 @@
 A full-stack web application to track job applications during your job search.
 
 ## Live Demo
-job-tracker-ptxw.onrender.com
+[job-tracker-ptxw.onrender.com](https://job-tracker-ptxw.onrender.com)
 
 ## About
 I built this project to learn full-stack web development while solving a real problem — keeping track of job applications. It helped me understand how a frontend communicates with a backend API, how data is stored in a cloud database, and how to deploy a Node.js application to production.
